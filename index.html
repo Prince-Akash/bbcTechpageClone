@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technology - BBC News</title>
+	<meta charset="UTF-8">
+	<!meta http-equiv="refresh" content="2">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="BBC-logo.png" type="image/png">
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: inherit;
+			color: inherit;
+		}
+		#top-bar{
+			width: 1196px;
+			height: 50px;
+			margin: 0 auto;
+		}
+		#top-bar-logo{
+			padding: 10px 10px 10px 0;
+			height: 30px;
+			width: 105px;
+			border-right: #E4E4E4 1px  solid;
+			float: left;
+		}
+		#sign-in-logo{
+			padding: 10px 15px 10px 15px;
+			height: 30px;
+			float: left;
+		}
+		#sign-in-text{
+			font-weight: bold;
+			padding: 20px 30px 20px 0;
+			border-right: #E4E4E4 1px solid;
+			float: left;
+			height: 10px;
+		}
+		.options{
+			float: left;
+			padding: 20px 20px 15px 20px;
+			border-right: #E4E4E4 1px solid;
+			font-size: 80%;
+			font-weight: bold;
+		}
+		#options-last{
+			float: left;
+			padding: 20px 20px 15px 20px;
+		  /*border-right: #E4E4E4 1px solid;*/
+			font-size: 80%;
+			font-weight: bold;
+		}
+		#upper-arrow{
+			float: left;
+			padding-top: 15px;
+			padding-bottom: 20px;
+			height: 15px;
+			border-right: #E4E4E4 1px solid;
+		}
+		#searchbox{
+			background-color: #E4E4E4;
+			border: none;
+			position: relative;
+			top: 15px;
+			right: -5px;
+			padding: 3px 0;
+			color: black;
+			font-weight: bolder;
+			float: left;
+		}
+		#mg{
+			float: left;
+			width: 23.5px;
+			position: relative;
+			top: 15px;
+			left: 5px;
+		}
+		#red-belt{
+			background-color: #BB1919;
+			color: white;
+			height: 116px;
+			width: 100%;
+		}
+		#red-belt-written-section{
+			width: 1196px;
+			height: 116px;
+			margin: 0 auto;
+		}
+		#news{
+			font-size: 40px;
+			position: relative;
+			right: 3px;
+			top: 5px;
+		}
+		.menu{
+			position: relative;
+			top: 40px;
+			padding: 0 5px;
+			border-left: #BB454F 1px solid;
+		}
+		#menu-option-1{
+			position: relative;
+			top: 40px;
+			padding: 0 5px 0 0;
+		}
+		#below-arrow{
+			position: relative;
+			top: 38px;
+		}
+		#content{
+			width: 1270px;
+			margin: 0 auto;
+			/*background-color: pink;*/
+		}
+		#page-name{
+			font-size: 150%;
+			position: relative;
+			top: 10px;
+			text-decoration: underline;
+			text-decoration-color: #BB1919;
+		}
+		#news-1{
+			float: left;
+			width: 493px;
+		}
+		#news-1-pic{
+			width: 473px;
+			height: 286px;
+			margin: 20px 20px 10px 0;
+		}
+		.news-1-headline{
+			font-weight: bold;
+			font-size: 200%;
+		}
+		.news-1-headline:hover{
+			color: #1380A1;
+			text-decoration: underline;
+		}
+		#news-1-subject{
+			color: #563f3f;
+			padding: 15px 0;
+		}
+		#news-1-subject-list{
+			margin-left: 10px;
+			font-weight: bold;
+		}
+		.tm-bar{
+			padding-bottom: 15px;
+		}
+		.tm{
+			width: 14px;
+		}
+		.tm-1{
+			padding-right: 15px;
+			color: #563f3f;
+			border-right: 1px #563f3f solid;
+		}
+		.tm-2{
+			padding-left: 10px;
+		}
+		.news-class{
+			float: left;
+			width: 234px;
+			margin: 20px 20px 20px 0;
+		}
+		.news-class-img{
+			width: 234px;
+			height: 125px;
+		}
+		.news-class-headline{
+			font-weight: bold;
+		}
+		.news-class-subject{
+			padding: 10px 0;
+			color: #563f3f;
+		}
+		.news-class-headline:hover{
+			color: #1380A1;
+			text-decoration: underline;
+		}
+		#w-l{
+			width: 550px;
+			float: left;
+			border-right: 1px #563f3f solid;
+			border-left: 1px #563f3f solid;
+			padding: 20px;
+		}
+		.heading{
+			font-size: 150%;
+			margin: 0 auto;
+			font-weight: bold;
+			text-decoration: underline;
+			text-align: center;
+		}
+		.w-l-news{
+			border-top: 3px #563f3f solid;
+			width: 500px;
+			height: 150px;
+			padding: 20px;
+		}
+		.w-l-menu-img{
+			float: left;
+			width: 234px;
+			height: 125px;
+			margin: 10px;
+		}
+		.w-l-menu-txt{
+			position: relative;
+			top: 50px;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+		.w-l-menu-txt:hover{
+			color: #1380A1;
+			text-decoration: underline;
+		}	
+		#f-a{
+			width: 550px;
+			float: right;
+			border-left: 1px #563f3f solid;
+			border-right: 1px #563f3f solid;
+			padding: 20px;
+		}
+		#devider{
+			clear: both;
+		}
+		#find-us-here{
+			clear: both;
+			font-size: 150%;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		.social{
+			margin: 30px;
+			width: 45px;
+			float: left;
+		}
+		#eletter{
+			color: grey;
+			width: 240px;
+			font-size: 12px;
+			float: left;
+			border-left: 1px grey solid;
+			padding-left: 15px;
+			position: relative;
+			left: 220px;
+		}
+		#eletter-image{
+			width: 220px;
+		}
+		#eletter-text{
+			padding-top: 20px;
+		}
+		#newsapp{
+			color: grey;
+			width: 240px;
+			font-size: 12px;
+			float: left;
+			position: relative;
+			left: 240px;
+		}
+		#newsapp-image{
+			width: 220px;
+		}
+		#newsapp-text{
+			padding-top: 20px;
+		}
+		#contact{
+			width: 220px;
+			float: left;
+			position: relative;
+			left:250px;
+			font-size: 12px;
+			color: grey;
+		}
+		#s-l{
+			background-color: #2F2F2F;
+			color: white;
+			height: 150px;
+			clear: both;
+			margin-top: 50px;
+		}
+		#s-l-i{
+			width: 1270px;
+			margin: 0 auto;
+		}
+		#title-head{
+			font-size: 170%;
+			margin: 12px 0;
+		}
+		#phone{
+			float: left;
+			margin-right: 150px;
+		}
+		#mic{
+			float: left;
+			margin-right: 150px;
+			position: relative;
+			bottom:6px;
+		}
+		#email{
+			float: left;
+			margin-right: 150px;
+		}
+		#newsletter{
+			float: left;
+		}
+		#l{
+			background-color: #4C4C4C;
+			color: white;
+			height: 300px;
+			clear: both;
+		}
+		#l-i{
+			width: 1270px;
+			margin: 0 auto;
+		}
+		#l-heading{
+			font-size: 150%;
+			padding: 32px 0;
+			font-weight: bold;
+		}
+		.l-i-1{
+			float: left;
+			padding-right: 90px;
+			font-size: 80%;
+			font-weight: bold;
+		}
+		.l-i-a{
+			float: left;
+			padding: 0 140px 0 30px;
+			border-left: 1px grey solid;
+			font-size: 80%;
+			font-weight: bold;
+		}
+		#line{
+			clear: both;
+			border-bottom: 1px grey solid;
+		}
+		#l-l{
+			font-size: 80%;
+			padding-top: 15px;
+		}
+		.l-l-format{
+			padding-right: 20px;
+		}
+		#port{
+			font-size: 80%;
+			padding-top: 30px;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div id="top-bar">
+		<a href="https://www.bbc.com/"><img id="top-bar-logo" src="BBC-logo.png"></a>
+		<a href="https://session.bbc.com/session?ptrt=https%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology&context=news&userOrigin=news_gnl"><img id="sign-in-logo" src="sign in.jpg">
+		<span id="sign-in-text">Sign in</span></a>
+		<a href="https://www.bbc.com/"><span class="options">Home</span></a>
+		<a href="https://www.bbc.com/news"><span class="options">News</span></a>
+		<a href="https://www.bbc.com/sport"><span class="options">Sport</span></a>
+		<a href="https://www.bbc.com/reel"><span class="options">Reel</span></a>
+		<a href="https://www.bbc.com/worklife"><span class="options">WorkLife</span></a>
+		<a href="https://www.bbc.com/travel"><span class="options">Travel</span></a>
+		<a href="https://www.bbc.com/culture"><span class="options">Culture</span></a>
+		<a href="https://www.bbc.com/future"><span class="options">Future</span></a>
+		<a href="https://www.bbc.com/news/technology#orb-footer"><span id="options-last">More</span>
+		<img id="upper-arrow" src="upper-arrow.png"></a>
+		<form action="https://www.bbc.co.uk/search?q=search">
+			<input id="searchbox" type="search" name="search" placeholder="Search" >
+			<input id="mg" type="image" name="search" src="mg.png">
+		</form>
+	</div>
+	<div id="red-belt">
+		<div id="red-belt-written-section">
+			<a href="https://www.bbc.com/news"><span id="news">NEWS</span></a><br>
+			<a href="https://www.bbc.com/news"><span id="menu-option-1">Home</span></a>
+			<a href="https://www.bbc.com/news/coronavirus"><span class="menu">Coronavirus</span></a>
+			<a href="https://www.bbc.com/news/video_and_audio/headlines"><span class="menu">Video</span></a>
+			<a href="https://www.bbc.com/news/world"><span class="menu">World</span></a>
+			<a href="https://www.bbc.com/news/world/asia"><span class="menu">Asia</span></a>
+			<a href="https://www.bbc.com/news/uk"><span class="menu">UK</span></a>
+			<a href="https://www.bbc.com/news/business"><span class="menu">Business</span></a>
+			<a href="https://www.bbc.com/news/technology"><span class="menu">Tech</span></a>
+			<a href="https://www.bbc.com/news/science_and_environment"><span class="menu">Science</span></a>
+			<a href="https://www.bbc.com/news/stories"><span class="menu">Stories</span></a>
+			<a href="https://www.bbc.com/news/entertainment_and_arts"><span class="menu">Enviroment and Arts</span></a>
+			<a href="https://www.bbc.com/news/health"><span class="menu">Health</span></a>
+			<a href="https://www.bbc.com/news/world_radio_and_tv"><span class="menu">World News TV</span></a>
+			<a href="https://www.bbc.com/news/in_pictures"><span class="menu">In Pictures</span></a>
+			<a href=""><span class="menu">More</span>
+			<img id="below-arrow" src="below-arrow.png"></a>
+		</div>
+	</div>
+	<div id="content">
+		<p id="page-name">Tech</p>
+		<a href="https://www.bbc.com/news/technology-53114251">
+			<div id="news-1">
+				<img id="news-1-pic" src="corona.jpg">
+				<p class="news-1-headline">What went wrong with the UK's contact tracing app?</p>
+					<p id="news-1-subject">After months of work, the UK has ditched the way its coronavirus-tracing app works. So what went wrong?</p>
+					<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+					</div>
+					<ul id="news-1-subject-list" type="square">
+						<li>How does contact tracing work?</li>
+						<li>Apple 'not told' about UK's latest app plans</li>
+						<li>Minister suggests winter wait for app</li>	
+					</ul>	
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/health-53120290">
+			<div class="news-class">
+				<img class="news-class-img" src="covid.jpg">
+				<p class="news-class-headline">New Covid-19 tracing tool appears on smartphones</p>
+				<p class="news-class-subject">A Covid-19 tracing software tool has appeared in the settings of both Android phones and iPhones as part of an update of their operating systems.</p><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53111295">
+			<div class="news-class">
+				<img class="news-class-img" src="kate.jpg">
+				<p class="news-class-headline">Katie Hopkins permanently suspended from Twitter</p>
+				<p class="news-class-subject">Controversial commentator Katie Hopkins has been permanently suspended from Twitter for violating its hateful conduct policy, the social media giant said.</p>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53105642">
+			<div class="news-class">
+				<img class="news-class-img" src="pa.jpg">
+				<p class="news-class-headline">Apple 'not told' about UK's latest app plans</p>
+				<p class="news-class-subject">Apple says it did not know the UK was working on a "hybrid" version of the NHS coronavirus contact-tracing app using tech it developed with Google.</p><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53111289">
+			<div class="news-class">
+				<img class="news-class-img" src="apple-app.jpg">
+				<p class="news-class-headline">Apple's annual developer showcase overshadowed by app row</p>
+				<p class="news-class-subject">Apple is facing mounting pressure over how it runs its app store ahead of its major global developers' conference, which starts on Monday.</p>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53106029">
+			<div class="news-class">
+				<img class="news-class-img" src="djt.jpg">
+				<p class="news-class-headline">Twitter labels Trump tweet 'manipulated media' for first time</p>
+				<p class="news-class-subject">Twitter has labelled a video tweeted by US President Donald Trump as having "manipulated media" for the first time.</p><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53112653">
+			<div class="news-class">
+				<img class="news-class-img" src="apple.jpg">
+				<p class="news-class-headline">Tech Tent: Apple's App Store battle</p>
+				<p class="news-class-subject">On this week's Tech Tent, the battle between Apple and its developers over the commission it charges to use its App Store.</p><br><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53069699">
+			<div class="news-class">
+				<img class="news-class-img" src="china.jpg">
+				<p class="news-class-headline">Tech takeovers feed into China Cold War fears</p>
+				<p class="news-class-subject">The UK government is planning new measures to restrict foreign takeovers on national security grounds.</p><br><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53109731">
+			<div class="news-class">
+				<img class="news-class-img" src="ea.jpg">
+				<p class="news-class-headline">EA says Fifa 21 will be the 'most authentic' yet</p>
+				<p class="news-class-subject">Fifa game developer EA Sports promises that the next-generation version of Fifa 21 will feature new technology to make it the most realistic yet.</p><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>	
+		<a href="https://www.bbc.com/news/world-us-canada-53098439">
+			<div class="news-class">
+				<img class="news-class-img" src="fb.jpg">
+				<p class="news-class-headline">Facebook removes Trump ad over 'Nazi hate symbol'</p>
+				<p class="news-class-subject">Facebook says it has removed adverts for US President Donald Trump's re-election campaign that featured a symbol used in Nazi Germany.</p><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53095336">
+			<div class="news-class">
+				<img class="news-class-img" src="nhs.png">
+				<p class="news-class-headline">UK virus-tracing app switches to Apple-Google model</p>
+				<p class="news-class-subject">In a major U-turn, the UK is ditching the way its current coronavirus-tracing app works and shifting to a model based on technology provided by Apple and Google.</p>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<a href="https://www.bbc.com/news/technology-53111287">
+			<div class="news-class">
+				<img class="news-class-img" src="girl.jpg">
+				<p class="news-class-headline">The Last Of Us Part II: Grim but great</p>
+				<p class="news-class-subject">Set 25 years after a global pandemic, The Last of Us Part II is a grim, violent game.</p><br><br><br>
+				<div class="tm-bar">
+						<img class="tm" src="clock.jpg">
+						<span class="tm-1">14h</span>
+						<span class="tm-2">Technology</span>
+				</div>
+			</div>
+		</a>
+		<hr id="devider">
+		<div id="w-l">
+			<p class="heading">Watch/Listen</p>
+			<a href="https://www.bbc.com/news/technology-52994076">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="w-l-1.png">
+				<span class="w-l-menu-txt">The tech adding atmosphere to empty sports stadiums.</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/technology-52994075">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="w-l-2.png">
+				<span class="w-l-menu-txt">The AI powered app for buying clothes online.</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/technology-53010029">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="w-l-3.png">
+				<span class="w-l-menu-txt">Robot breaks own bricklaying record and other news</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/technology-53018000">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="w-l-4.png">
+				<span class="w-l-menu-txt">PS5: PlayStation 5 console and games revealed.</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/technology-52920909">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="w-l-5.png">
+				<span class="w-l-menu-txt">Online tools to help you be more creative in lockdown.</span>
+			</div>
+			</a>
+		</div>
+		<div id="f-a">
+			<p class="heading">Features & Analysis</p>
+			<a href="https://www.bbc.com/news/business-53046873">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="f-a-1.png">
+				<span class="w-l-menu-txt">Have we become too reliant on Big Tech firms?</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/newsbeat-53080982">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="f-a-2.png">
+				<span class="w-l-menu-txt">Last of Us Part 2: Creators say diversity in games ‘essential’</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/blogs-trending-53076550">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="f-a-3.png">
+				<span class="w-l-menu-txt">Dating apps, video games and TikTok: The digital activists boosting Black Lives Matter</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/technology-53050716">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="f-a-4.png">
+				<span class="w-l-menu-txt">Amazon v EU: Has the online giant met its match?</span>
+			</div>
+			</a>
+			<a href="https://www.bbc.com/news/business-53067009">
+			<div class="w-l-news">
+				<img class="w-l-menu-img" src="f-a-5.png">
+				<span class="w-l-menu-txt">How Elon Musk aims to revolutionise battery technology</span>
+			</div>
+			</a>
+		</div>
+		<div id="find-us-here">
+			<hr>
+			<p>Find us here</p>
+			<div>
+				<a href="https://twitter.com/BBCWorld"><img class="social" src="tweeter.png"></a>
+				<a href="https://www.facebook.com/bbcnews"><img class="social" src="facebook.png"></a>
+				<a href="https://www.instagram.com/bbcnews"><img class="social" src="insta.png"></a>
+			</div>	
+			<a href="https://www.bbc.co.uk/programmes/articles/4g8c0mkNmM190Zl00VdXTTb/bbc-news-daily-email"><div id="eletter">
+				<img id="eletter-image" src="newsdaily.png">
+				<p id="eletter-text">Get news from BBC in your inbox each week day morning</p>
+			</div></a>
+			<a href="http://www.bbc.com/news/10628994"><div id="newsapp">
+				<img id="newsapp-image" src="newsapp.png">
+				<p id="newsapp-text">Find out more about BBC news app</p>
+			</div></a>
+			<div id="contact">
+				<p>Email us at <b>haveyoursay@bbc.co.uk</b></p>
+				<br>
+				<p>Send an SMS or MMS to <b>+44 7624 800100</b></p>
+				<br>
+				<p>Follow <a href="https://twitter.com/BBC_HaveYourSay">Have Your Say on Twitter</a></p>
+				<br>
+				<a href="http://www.bbc.co.uk/news/help-41670342"><p>Why you can trust BBC News</p></a>
+				<br><br>
+			</div>
+		</div>
+	</div>
+	<div id="s-l">
+		<div id="s-l-i">
+			<br>
+			<p id="title-head">BBC News Services</p>
+			<a href="file:///C:/Users/pakas/Desktop/bbc%20design/index.html"><div id="phone">
+				<img src="PHONE.png">
+				<span id="phone-text">On your mobile</span>
+			</div></a>
+
+			<a href="https://www.bbc.co.uk/news/help-50068132"><div id="mic">
+				<img src="MIC.png">
+				<span id="mic-text">On smart speakers</span>
+			</div></a>
+			<a href="https://www.bbc.co.uk/news/10628323"><div id="email">
+				<img src="EMAIL.png">
+				<span id="email-text">Get news alerts</span>
+			</div></a>
+			<a href="https://www.bbc.co.uk/news/20039682"><div id="newsletter">
+				<img src="INBOX.png">
+				<span id="inbox-text">Contact BBC news</span>
+			</div></a>
+		</div>
+	</div>
+	<div id="l">
+		<div id="l-i">
+			<p id="l-heading">Explore the BBC</p>
+			<div class="l-i-1">
+				<a href="https://www.bbc.com/"><p>Home</p></a><br>
+				<a href="https://www.bbc.com/future"><p>Future</p></a>
+			</div>
+			<div class="l-i-a">
+				<a href="https://www.bbc.com/news"><p>News</p></a><br>
+				<a href="https://www.bbc.com/culture"><p>Culture</p></a>
+			</div>
+			<div class="l-i-a">
+				<a href="https://www.bbc.com/sport"><p>Sports</p></a><br>
+				<a href="https://www.bbc.com/culture/music"><p>Music</p></a>
+			</div>
+			<div class="l-i-a">
+				<a href="https://www.bbc.com/reel"><p>Reel</p></a><br>
+				<a href="https://www.bbc.co.uk/schedules/p00fzl9m"><p>TV</p></a>
+			</div>
+			<div class="l-i-a">
+				<a href="https://www.bbc.com/worklife"><p>Worklife</p></a><br>
+				<a href="https://www.bbc.com/weather"><p>Weather</p></a>
+			</div>
+			<div class="l-i-a">
+				<a href="https://www.bbc.com/travel"><p>Travel</p></a><br>
+				<a href="https://www.bbc.co.uk/sounds"><p>Sounds</p></a>
+			</div>
+			<div id="line"><br><br></div>
+			<div id="l-l">
+				<a href="https://www.bbc.co.uk/usingthebbc/terms/"><span class="l-l-format">Terms of Use</span></a>
+				<a href="https://www.bbc.co.uk/aboutthebbc"><span class="l-l-format">About the BBC</span></a>
+				<a href="https://www.bbc.co.uk/usingthebbc/privacy/"><span class="l-l-format">Privacy Policy</span></a>
+				<a href="https://www.bbc.co.uk/usingthebbc/cookies/"><span class="l-l-format">Cookies</span></a>
+				<a href="https://www.bbc.co.uk/accessibility/"><span class="l-l-format">Accessibility Help</span></a>
+				<a href="https://www.bbc.co.uk/guidance"><span class="l-l-format">Parental Guidance</span></a>
+				<a href="https://www.bbc.co.uk/contact"><span class="l-l-format">Contact the BBC</span></a>
+				<a href="https://www.bbc.co.uk/bbcnewsletter"><span class="l-l-format">Get Personalised Newsletters</span></a>
+				<a href="https://advertising.bbcworldwide.com/"><span class="l-l-format">Advertise with us</span></a>
+			</div>
+			<div id="port">
+				<a href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"><p>AdChoices / Do Not Sell My Info</p></a><br><br>
+				<p><b>Copyright © 2020 BBC.</b> The BBC is not responsible for the content of external sites.<a href="https://www.bbc.co.uk/help/web/links/"><b>Read about our approach to external linking.</b></a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
